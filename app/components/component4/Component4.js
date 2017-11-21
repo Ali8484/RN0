@@ -50,6 +50,7 @@ const Styles = StyleSheet.create({
         borderTopWidth : 1,
         borderBottomWidth : 1,
         backgroundColor :'#43f580'
+        
     }
 });
 AppRegistry.registerComponent('no3',()=>no3);
