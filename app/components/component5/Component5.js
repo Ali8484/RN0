@@ -10,11 +10,9 @@ export default class no4 extends Component{
             userDataSource: ds,
         };
       }
-
       componentDidMount(){
           this.fetchUsers();
       }
-
       fetchUsers(){
           fetch('https://jsonplaceholder.typicode.com/users')
           .then((response) => response.json() )
@@ -24,7 +22,6 @@ export default class no4 extends Component{
               });
           });
       }
-
       renderRow(user , sectionId,rowId,highlightRow){
         return(
              <View style={Styles.row} >
@@ -32,7 +29,6 @@ export default class no4 extends Component{
              </View>
         )
     }
-            
         render(){
         return(
             <ListView
@@ -57,7 +53,6 @@ const Styles = StyleSheet.create({
         borderTopWidth : 1,
         borderBottomWidth : 1,
         backgroundColor :'#43f580'
-        
     }
 });
 AppRegistry.registerComponent('no4',()=>no4);
